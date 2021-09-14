@@ -39,58 +39,86 @@
 						"mappings": [
 							{
 								"source": {
-									"ordinal": 1
+									"name": "EMAIL",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Email"
+									"name": "Email",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 2
+									"name": "ALTERNATIVE MAIL",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AltEmail"
+									"name": "AltEmail",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 3
+									"name": "NAME",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Name"
+									"name": "Name",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 4
+									"name": "FIRST SURNAME",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FN"
+									"name": "FN",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 6
+									"name": "PHONE NUMBER1",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PN1"
+									"name": "PN1",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 7
+									"name": "PHONE NUMBER2",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PN2"
+									"name": "PN2",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"ordinal": 8
+									"name": "COUNTRY",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CTY"
+									"name": "CTY",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							}
 						],
