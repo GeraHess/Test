@@ -17,27 +17,35 @@
 		},
 		"schema": [
 			{
+				"name": "EMAIL",
 				"type": "String"
 			},
 			{
+				"name": "ALTERNATIVE MAIL",
 				"type": "String"
 			},
 			{
+				"name": "NAME",
 				"type": "String"
 			},
 			{
+				"name": "FIRST SURNAME",
 				"type": "String"
 			},
 			{
+				"name": "SECOND SURNAME",
 				"type": "String"
 			},
 			{
+				"name": "PHONE NUMBER1",
 				"type": "String"
 			},
 			{
+				"name": "PHONE NUMBER2",
 				"type": "String"
 			},
 			{
+				"name": "COUNTRY",
 				"type": "String"
 			}
 		]
