@@ -1,0 +1,50 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Email",
+				"type": "varchar"
+			},
+			{
+				"name": "AltEmail",
+				"type": "varchar"
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "FN",
+				"type": "varchar"
+			},
+			{
+				"name": "PN1",
+				"type": "varchar"
+			},
+			{
+				"name": "PN2",
+				"type": "varchar"
+			},
+			{
+				"name": "CTY",
+				"type": "varchar"
+			},
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Users"
+		}
+	}
+}

@@ -1,0 +1,113 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ExcelSource",
+						"storeSettings": {
+							"type": "AzureFileStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"ordinal": 1
+								},
+								"sink": {
+									"name": "Email"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 2
+								},
+								"sink": {
+									"name": "AltEmail"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 3
+								},
+								"sink": {
+									"name": "Name"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 4
+								},
+								"sink": {
+									"name": "FN"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 6
+								},
+								"sink": {
+									"name": "PN1"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 7
+								},
+								"sink": {
+									"name": "PN2"
+								}
+							},
+							{
+								"source": {
+									"ordinal": 8
+								},
+								"sink": {
+									"name": "CTY"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Excel1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
