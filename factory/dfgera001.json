@@ -1,0 +1,9 @@
+{
+	"name": "dfgera001",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1d4648ec-e821-432a-8ba7-b809b58275ba",
+		"tenantId": "bdf6d7f5-a718-40c1-95de-e1e4bae57793"
+	}
+}
