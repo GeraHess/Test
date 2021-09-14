@@ -40,6 +40,10 @@
 				"name": "id",
 				"type": "int",
 				"precision": 10
+			},
+			{
+				"name": "SN",
+				"type": "varchar"
 			}
 		],
 		"typeProperties": {
