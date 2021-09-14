@@ -12,7 +12,8 @@
 			"location": {
 				"type": "AzureFileStorageLocation",
 				"fileName": "Students.xlsx"
-			}
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": [
 			{
